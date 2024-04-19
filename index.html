@@ -11,13 +11,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Alice&family=Send+Flowers&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="./images/Logo.png" height="70px" width="70px"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+        <a class="navbar-brand mr-auto p-2" href="#"><img src="./images/Logo.png" height="70px" width="70px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto p-2">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
             </li>
@@ -45,7 +45,8 @@
       <h1>Erika Land</h1>
       <h2>A UX/UI designer that leverages her background in<br>education to craft essential and innovative user experiences.</h2></div>
 <div class="project1">
-    <img src="./images/project1phone.png" alt="project1phone">
+  <div class="left_floral"><img src="./images/left_floral.png" alt="left_floral"></div>
+    <img src="./images/project1phone.png" alt="project1phone" class="project1phone">
     <div class="project1description">
         <h3>Art Avenue App</h3>
         <p>Art Avenue is a unique app that connects artists<br>with local buyers to increase their consumer base<br>with minimum time away from their passion!</p>
@@ -53,14 +54,14 @@
     </div>
 </div>
 <div class="project2">
-    <div class="project1description">
+    <div class="project2description">
         <h3>Non-Profit<br>Website Redesign</h3>
         <p>Therapy Animals of San Antonio is a non-profit<br>dedicated to connecting people and animals<br>together for healing. My team redesigned their website. </p>
         <button type="button" class="btn btn-primary"><img src="./images/button_left_floral.png" alt="left">Go to Project<img src="./images/button_right_floral.png" alt="right"></button>
     </div>
-    <img src="./images/desktop_prototype.png" alt="desktop_prototype" width="583" height="356">
-</div>
-<div class="mobile_prototype"><img src="./images/mobile_prototype.png" alt="mobile_prototype"></div>
+    <div class="desktop_prototype"><img src="./images/desktop_prototype.png" alt="desktop_prototype" width="583" height="356"></div>
+    <div class="mobile_prototype"><img src="./images/mobile_prototype.png" alt="mobile_prototype"></div>
+    <div class="right_floral"><img src="./images/right_floral.png" alt="right_floral"></div>
 </div>
 <section class="contact_box">
 <div class="lets_chat">
@@ -79,8 +80,7 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"placeholder="Enter a message here..."></textarea>
         <br><button type="submit" class="btn btn-primary"><img src="./images/button_left_floral.png" alt="left">Submit<img src="./images/button_right_floral.png" alt="right"></button>
       </form>
-</div></section>
-<div class="chat_right_floral"><img src="./images/chat_right_floral.png" alt="chat_right_floral"></div>
+</div><div class="chat_left_floral"><img src="./images/chat_left_floral.png" alt="chat_left_floral"></div><div class="chat_right_floral"><img src="./images/chat_right_floral.png" alt="chat_right_floral"></div></section>
 <footer>
     <div class="footer">
         <div class="footer_left">
@@ -94,5 +94,7 @@
         </div>
     </div>
 </footer>   
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>

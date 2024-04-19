@@ -16,11 +16,8 @@ body{
     font-family:"Alice", serif;
     font-size: 30px;
     color:##0E374D;
-}
-#navbarNavDropdown{
-    float: right !important;
-    align-items:flex-end !important;
-}
+  }
+
 .responsive{
     width:100%;
     height:auto;
@@ -81,24 +78,31 @@ p{
 .project1{
     display:flex;
     margin-top: 10%;
-    margin-left: 5%;
-    background-image: url(./images/left_floral.png);
-    background-repeat: no-repeat;
-    background-position: 10%;
+    /* padding-right: 20%; */
     align-items: center;
     align-content: center;
     justify-content: center;
+    z-index:0;
 }
-img #left_floral{
-    z-index: 1;
+.left_floral{
+    display:flex;
+    position:relative;
+    margin:0px;
+    padding:0px;
+    left:10%;
+    z-index:-1;
 }
-img #project1phone{
-    z-index:2;
+.project1phone{
+    display:flex;
+    position:relative;
+    margin:0px;
+    padding:0px;
+    z-index:0;
 }
 .project1description{
     display:flex;
     flex-direction: column;
-    width: 460px;
+    width:500px;
 height:837px;
     align-items: center;
     text-align: center;
@@ -106,25 +110,46 @@ height:837px;
 }
 .project2{
     display:flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     margin-top: 10%;
-    margin-left: 15%;
     height:553px;
-align-items: center;
-    background-image: url(./images/right_floral.png);
-    background-repeat: no-repeat;
-    background-position: 80%;
+    padding-left: 25%;
+}
+.project2description h3{
+    width:450px;
+}
+.project2description{
+    display:flex;
+    flex-direction: column;
+height:837px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.right_floral{
+    display:flex;
+    position:relative;
+    right:400px;
+    z-index:-1;
+}
+.desktop_prototype{
+    z-index:0;
 }
 .mobile_prototype{
-    position: absolute;
-    right: 25%;
-    top:2315px;
+    display:flex;
+    position: relative;
+    right:190px;
+    bottom:-100px;
+    z-index:1;
 }
 .lets_chat{
     background-color:#B0C8D4;
 display: flex;
 flex-direction: column;
     width:764px;
-    height:max-content;
+    height:525px;
     border-radius: 16px;
     text-align:center;
     padding:20px;
@@ -139,19 +164,27 @@ text-align: left;
 margin-left: 40%;
 }
 .contact_box{
-    background-image: url(./images/chat_left_floral.png);
-    background-repeat: no-repeat;
-    background-position: 15%;
     display: flex;
     justify-content: center;
+    z-index: 1;
+    height:max-content;
 }
-.chat_right_floral{
+.chat_left_floral{
 display:flex;
 justify-content: right;
-position: absolute;
-bottom: 200px;
-right:100px;
+position: relative;
+bottom:630px;
+left:-530px;
+z-index:-1;
 }
+.chat_right_floral{
+    display:flex;
+    justify-content: right;
+    position: relative;
+    bottom: 1200px;
+    right:-250px;
+    z-index:-1;
+    }
 .footer{
     display:flex;
     justify-content: space-between;
